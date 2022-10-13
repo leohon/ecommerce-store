@@ -1,0 +1,42 @@
+@use "./variables";
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(variables.$primary, 0.08);
+  background: variables.$solidWhite;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .cartFlex {
+    display: flex;
+    align-items: center;
+
+    p {
+      margin-bottom: 0;
+      width: 24px;
+      height: 24px;
+      background: variables.$primary;
+      color: variables.$solidWhite;
+      text-align: center;
+      border-radius: 50%;
+      line-height: 1;
+    }
+
+    .menuIcon,
+    .bag {
+      margin-right: 15px;
+    }
+  }
+}
+
+// todo: make functional slide out navigation
+.slideOutNav {
+  display: none;
+}
